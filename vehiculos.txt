@@ -1,0 +1,3 @@
+<automovil.Automovil object at 0x00000202DF617D10>, Velocidad: 5 km/h, Cilindrada: 8 cc
+<automovil.Automovil object at 0x00000202DF617A40>, Velocidad: 5 km/h, Cilindrada: 5 cc
+<automovil.Automovil object at 0x00000202DF64C050>, Velocidad: 8 km/h, Cilindrada: 2 cc
