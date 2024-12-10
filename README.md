@@ -20,14 +20,52 @@
 # - El módulo "validadores" asegura que los datos ingresados sean válidos.
 
 
-*** Diagrama de Clases 2DA PARTE
+*** Diagrama de Clases 2DA PARTE(UML)
 
 Vehiculo
-├── Automovil
-│   ├── Particular
-│   └── Carga
-├── Bicicleta
-│   └── Motocicleta
+---------
+- marca
+- modelo
+- ruedas
++ __init__()
++ __str__()
+
+  / \
+ /   \
+/     \
+Automovil
+---------
+- velocidad
+- cilindraje
++ __init__()
++ __str__()
+
+  / \
+ /   \
+/     \
+Particular            Carga
+---------            --------
+- puestos            - peso
++ __init__()          + __init__()
++ __str__()           + __str__()
+
+Bicicleta
+---------
+- tipo
++ __init__()
++ __str__()
+
+  / \
+ /   \
+/     \
+Motocicleta
+-----------
+- nro_radios
+- cuadro
+- motor
++ __init__()
++ __str__()
+
 
 *** 3ERA PARTE
 
