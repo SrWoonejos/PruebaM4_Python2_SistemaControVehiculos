@@ -4,6 +4,8 @@ from particular import Particular
 from carga import Carga
 from bicicleta import Bicicleta
 from motocicleta import Motocicleta
+from vehiculo import Vehiculo
+from automovil import Automovil
 
 # Creación de instancias
 particular = Particular("Ford", "Fiesta", 4, "180", "500", 5)
