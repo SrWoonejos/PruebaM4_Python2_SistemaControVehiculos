@@ -1,5 +1,7 @@
 #parte 3 csv
-
+from automovil import Automovil, Particular, Carga
+from bicicleta import Bicicleta
+from motocicleta import Motocicleta
 import csv
 
 # Función para manejar entradas del usuario con validación
@@ -58,3 +60,4 @@ def leer_vehiculos(nombre_archivo):
     except IOError as e:
         print(f"Error al leer el archivo: {e}")
     return vehiculos
+

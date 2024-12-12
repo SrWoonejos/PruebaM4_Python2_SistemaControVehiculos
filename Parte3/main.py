@@ -58,17 +58,16 @@ def main():
                 vehiculo = Automovil(marca, modelo, nro_ruedas, velocidad, cilindrada)
 
         elif tipo_vehiculo == 4:  # Bicicleta
-            tipo_bici = input("Inserte el tipo de bicicleta (Urbana, Carrera): ").capitalize()
+            tipo_bici = input("Inserte el tipo de Bicicleta (Urbana, Carrera): ").capitalize()
             vehiculo = Bicicleta(marca, modelo, nro_ruedas, tipo_bici)
 
         elif tipo_vehiculo == 5:  # Motocicleta
-            tipo_bici = input("Inserte el tipo de bicicleta (Urbana, Carrera): ").capitalize()
             nro_radios = solicitar_entero("Inserte el número de radios: ")
             if nro_radios == 'undo':
                 continue
             cuadro = input("Inserte el tipo de cuadro: ")
             motor = input("Inserte el tipo de motor: ")
-            vehiculo = Motocicleta(marca, modelo, nro_ruedas, tipo_bici, nro_radios, cuadro, motor)
+            vehiculo = Motocicleta(marca, modelo, nro_ruedas, nro_radios, cuadro, motor)
 
         else:
             print("Tipo de vehículo no reconocido.")

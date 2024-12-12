@@ -1,7 +1,5 @@
 # PruebaM4_Python2_SistemaControVehiculos
-
-*** 1era PARTE:
-# Diagrama de Clases - Parte1
+# Diagrama de Clases
 
 #PruebaPython2/
 Parte1
