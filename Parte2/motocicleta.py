@@ -1,4 +1,4 @@
-#PARTE2
+#PARTE 2 - PRUEBA FINAL PYTHON M4 - FULL STACK PYTHON 2024
 from bicicleta import Bicicleta
 
 # Clase Motocicleta que hereda de Bicicleta

@@ -1,4 +1,4 @@
-#main.py 2da parte
+#PARTE 2 - PRUEBA FINAL PYTHON M4 - FULL STACK PYTHON 2024 - Daniela Miranda
 from automovil import Automovil, Particular, Carga
 from bicicleta import Bicicleta
 from motocicleta import Motocicleta

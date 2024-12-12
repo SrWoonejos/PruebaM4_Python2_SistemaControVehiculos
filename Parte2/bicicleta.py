@@ -1,5 +1,4 @@
-#PARTE2
-
+#PARTE 1 - PRUEBA FINAL PYTHON M4 - FULL STACK PYTHON 2024
 from vehiculo import Vehiculo
 
 # Clase Bicicleta que hereda de Vehiculo

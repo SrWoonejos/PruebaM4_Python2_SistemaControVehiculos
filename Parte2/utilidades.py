@@ -1,4 +1,4 @@
-#PARTE2
+#PARTE 2 - PRUEBA FINAL PYTHON M4 - FULL STACK PYTHON 2024
 # Función para manejar entradas del usuario con validación
 def solicitar_entero(mensaje):
     while True:

@@ -1,5 +1,4 @@
-#main.py 1era parte
-
+#PARTE 1 - PRUEBA FINAL PYTHON M4 - FULL STACK PYTHON 2024 - DANIELA MIRANDA
 from automovil import Automovil
 from utilidades import solicitar_entero
 
