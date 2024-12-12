@@ -4,8 +4,8 @@ from bicicleta import Bicicleta
 from motocicleta import Motocicleta
 import csv
 
-# Función para manejar entradas del usuario con validación
 def solicitar_entero(mensaje):
+    """Solicita un entero al usuario con validación de errores."""
     while True:
         try:
             valor = input(mensaje)
@@ -18,12 +18,13 @@ def solicitar_entero(mensaje):
                 return valor
         except ValueError:
             print("Por favor, ingrese un número válido.")
-        except OSError:
-            print("Error de entrada/salida. Verifique el entorno de ejecución.")
-            return 0
 
-# Función para guardar datos en un archivo CSV
 def guardar_vehiculos(vehiculos, nombre_archivo):
+    """Guarda una lista de vehículos en un archivo CSV."""
+    if not vehiculos:
+        print("No hay vehículos para guardar.")
+        return
+
     try:
         with open(nombre_archivo, 'w', newline='') as archivo_csv:
             campos = list(vehiculos[0].to_dict().keys())
@@ -35,14 +36,14 @@ def guardar_vehiculos(vehiculos, nombre_archivo):
     except IOError as e:
         print(f"Error al guardar el archivo: {e}")
 
-# Función para leer datos de un archivo CSV
 def leer_vehiculos(nombre_archivo):
+    """Lee vehículos desde un archivo CSV."""
     vehiculos = []
     try:
         with open(nombre_archivo, 'r') as archivo_csv:
             reader = csv.DictReader(archivo_csv)
             for fila in reader:
-                tipo = fila['tipo']
+                tipo = fila.get('tipo')
                 if tipo == 'Automovil':
                     vehiculo = Automovil(fila['marca'], fila['modelo'], int(fila['nro_ruedas']), int(fila['velocidad']), int(fila['cilindrada']))
                 elif tipo == 'Particular':
@@ -57,7 +58,8 @@ def leer_vehiculos(nombre_archivo):
                     continue
                 vehiculos.append(vehiculo)
         print(f"Datos leídos de {nombre_archivo} correctamente.")
+    except FileNotFoundError:
+        print(f"El archivo {nombre_archivo} no existe.")
     except IOError as e:
         print(f"Error al leer el archivo: {e}")
     return vehiculos
-

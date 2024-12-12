@@ -1,5 +1,4 @@
 #parte 3 csv
-
 from vehiculo import Vehiculo
 
 # Clase Automovil que hereda de Vehiculo
