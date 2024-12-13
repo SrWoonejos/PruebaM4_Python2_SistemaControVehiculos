@@ -24,8 +24,20 @@ Parte3/
 ├── utilidades.py   #CSV funciones para leer y guardar datos en archivo
 └── main.py   # CSV isinstance
 
---------------------------------------------------------------------------------------------------------------------------------------
+## Descripción del diagrama de clases
+- `Vehiculo`: Clase base que define los atributos comunes como marca, modelo y número de ruedas.
+- `Automovil`: Hereda de Vehiculo, añade atributos específicos como velocidad y cilindrada.
+- `Bicicleta` y `Motocicleta`: Heredan de Vehiculo, cada una con atributos únicos.
+- `CSV`: Maneja la lectura y escritura de datos en archivos CSV.
 
+--------------------------------------------------------------------------------------------------------------------------------------
+# Sistema de Control de Vehículos
+## Estructura del Proyecto
+- `Parte1/`: Base del sistema con clases `Vehiculo` y `Automovil`.
+- `Parte2/`: Expande el sistema añadiendo `Bicicleta` y `Motocicleta`.
+- `Parte3/`: Implementa funcionalidad de persistencia con CSV.
+
+## Diagrama de Clases
 @startuml
 skinparam style strictuml
 
